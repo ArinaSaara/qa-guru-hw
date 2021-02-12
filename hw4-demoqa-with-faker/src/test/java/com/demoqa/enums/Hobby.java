@@ -7,10 +7,11 @@ public enum Hobby {
 
     private final String hobby;
 
-    Hobby(String hobby){
+    Hobby(String hobby) {
         this.hobby = hobby;
     }
-    public String getHobby(){
+
+    public String getHobby() {
         return hobby;
     }
 }

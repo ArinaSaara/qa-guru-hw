@@ -7,10 +7,11 @@ public enum Gender {
 
     private final String gender;
 
-    Gender(String gender){
+    Gender(String gender) {
         this.gender = gender;
     }
-    public String getGender(){
+
+    public String getGender() {
         return gender;
     }
 }

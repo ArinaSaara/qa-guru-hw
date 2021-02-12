@@ -10,10 +10,11 @@ public enum Subject {
 
     private final String subject;
 
-    Subject(String subject){
+    Subject(String subject) {
         this.subject = subject;
     }
-    public String getSubject(){
+
+    public String getSubject() {
         return subject;
     }
 }
