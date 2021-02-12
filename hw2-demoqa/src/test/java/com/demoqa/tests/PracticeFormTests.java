@@ -19,7 +19,6 @@ public class PracticeFormTests {
         Student expectedStudent = new Student("test", "test", "test@gmail.com", "Male", "7800000000",
                 LocalDate.of(2000, 3, 11), "Maths", "Sports", "image.jpg", "Test address", "NCR", "Delhi");
 
-        System.out.println(expectedStudent.getDateOfBirthday());
         step("Fill Student Registration Form", () -> {
             practiceForm.openPage()
                     .enterFirstName(expectedStudent.getFirstName())
