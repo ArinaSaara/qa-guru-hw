@@ -32,7 +32,7 @@ public class PracticeFormTests {
                     .checkHobby(expectedStudent.getHobby())
                     .uploadImage(expectedStudent.getImage("src/test/resources/files/"))
                     .enterAddress(expectedStudent.getAddress())
-                    .selectLocation(expectedStudent.getState(), expectedStudent.getCity())
+                    .selectStateAndCity(expectedStudent.getState(), expectedStudent.getCity())
                     .clickOnCreateStudentButton();
         });
 
