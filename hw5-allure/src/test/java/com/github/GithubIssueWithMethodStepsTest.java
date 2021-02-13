@@ -1,6 +1,8 @@
 package com.github;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
 import com.github.steps.BaseSteps;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 
 public class GithubIssueWithMethodStepsTest {
@@ -13,6 +15,7 @@ public class GithubIssueWithMethodStepsTest {
 
     @Test
     public void testIssueSearch() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
         steps.openMainPage();
         steps.searchForRepository(REPOSITORY);
         steps.goToRepositoryFromSearch(REPOSITORY);
